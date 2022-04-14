@@ -38,8 +38,6 @@ while True:
 
     if keyboard.is_pressed(hotkey):
         force_jump = client+dwForceJump
-        force_left = client+dwForceLeft
-        force_right = client+dwForceRight
         player = pm.read_int(client+dwLocalPlayer)
         onGround = pm.read_int(player+m_fFlags)
         if player and onGround and onGround == 257:
